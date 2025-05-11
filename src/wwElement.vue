@@ -21,6 +21,9 @@
         @blur="onBlur"
         @keyup.enter="onEnter"
     />
+    <div>
+        Room ID: {{ content.room_id }}
+     </div>
 </template>
 
 <script>

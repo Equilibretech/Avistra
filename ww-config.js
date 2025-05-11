@@ -383,8 +383,21 @@ export default {
             }),
             hidden: (_, sidePanelContent) => !sidePanelContent.form?.uid,
         },
-        /* wwEditor:end */
-        fieldName: {
+        room_id: {
+    label: { en: 'Room ID', fr: 'ID de la room' },
+    type: 'Text',
+    bindable: true,
+    defaultValue: '',
+    section: 'settings',
+    /* wwEditor:start */
+    bindingValidation: {
+        type: 'string',
+        tooltip: 'Un identifiant de salle provenant de Xano ou d’un autre service : `"abc123"`',
+    },
+    /* wwEditor:end */
+    },
+    fieldName: {
+
             label: 'Field name',
             section: 'settings',
             type: 'Text',
